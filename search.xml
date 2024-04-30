@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Arthas实用命令</title>
+      <link href="/2024/04/30/arthas-shi-yong-ming-ling/"/>
+      <url>/2024/04/30/arthas-shi-yong-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Arthas命令手册"><a href="#Arthas命令手册" class="headerlink" title="Arthas命令手册"></a>Arthas命令手册</h1><h2 id="JVM（内存）篇"><a href="#JVM（内存）篇" class="headerlink" title="JVM（内存）篇"></a>JVM（内存）篇</h2><h3 id="1-查看JVM信息"><a href="#1-查看JVM信息" class="headerlink" title="1.查看JVM信息"></a>1.查看JVM信息</h3><pre class="language-none"><code class="language-none">jvm</code></pre><h3 id="2-内存火焰图"><a href="#2-内存火焰图" class="headerlink" title="2.内存火焰图"></a>2.内存火焰图</h3><h2 id="线程篇"><a href="#线程篇" class="headerlink" title="线程篇"></a>线程篇</h2><h3 id="1-CPU使用率前5的线程"><a href="#1-CPU使用率前5的线程" class="headerlink" title="1.CPU使用率前5的线程"></a>1.CPU使用率前5的线程</h3><pre class="language-none"><code class="language-none">thread -i 3000 -n 5 | plaintext</code></pre><h3 id="2-阻塞（等待获取锁）的线程"><a href="#2-阻塞（等待获取锁）的线程" class="headerlink" title="2.阻塞（等待获取锁）的线程"></a>2.阻塞（等待获取锁）的线程</h3><pre class="language-none"><code class="language-none">thread -b | plaintext</code></pre><h3 id="3-所有处于BLOCKED状态的线程"><a href="#3-所有处于BLOCKED状态的线程" class="headerlink" title="3.所有处于BLOCKED状态的线程"></a>3.所有处于<code>BLOCKED</code>状态的线程</h3><pre class="language-none"><code class="language-none">thread --state BLOCKED | plaintext</code></pre><h2 id="CPU篇"><a href="#CPU篇" class="headerlink" title="CPU篇"></a>CPU篇</h2><h3 id="1-arthas-jprofiler分析-采集的cpu-jfr火焰图"><a href="#1-arthas-jprofiler分析-采集的cpu-jfr火焰图" class="headerlink" title="1.arthas+jprofiler分析 采集的cpu jfr火焰图"></a>1.arthas+jprofiler分析 采集的cpu jfr火焰图</h3><pre class="language-none"><code class="language-none">profiler start --event cpu --interval 10000000 --format jfr --duration 180</code></pre><h2 id="Watch篇"><a href="#Watch篇" class="headerlink" title="Watch篇"></a>Watch篇</h2><p>设置json格式输出参数</p><pre class="language-shell" data-language="shell"><code class="language-shell">options json-format true</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 运维 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>绿皮书里Tony写给Dolores的信</title>
+      <link href="/2022/08/24/lu-pi-shu-li-tony-xie-gei-dolores-de-xin/"/>
+      <url>/2022/08/24/lu-pi-shu-li-tony-xie-gei-dolores-de-xin/</url>
+      
+        <content type="html"><![CDATA[<h1 id="绿皮书里Tony写给Dolores的信"><a href="#绿皮书里Tony写给Dolores的信" class="headerlink" title="绿皮书里Tony写给Dolores的信"></a>绿皮书里Tony写给Dolores的信</h1><p>Dear Dolores<br>When I think of you, I’m reminded of the beautiful plains of Iowa. The distance between us is breaking my spirit, My time and experiences without you are meaningless to me. Falling in love with you was the easiest thing I have ever done. Nothing matters to me but you. And everyday I am alive, I’m aware of this. I loved you the day I met you, I love you today…And I will love you to rest of my life.</p><p>Dear Dolores<br>The trees have shed their leafy clothing and their colors have faded to grays and browns, I saw millions of trees, all dusted with snow, just like out of a fairytale…I would count the hours, minutes, and seconds until you are in my arms. I love you and miss you more than I can explain.</p><p>Dear Dolores<br>Sometimes you remind me of a house.A house with beautiful lights on it，where everyone is happy inside…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电影 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电影 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mockito学习笔记</title>
+      <link href="/2022/01/03/mockito-xue-xi-bi-ji/"/>
+      <url>/2022/01/03/mockito-xue-xi-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mockito学习笔记"><a href="#Mockito学习笔记" class="headerlink" title="Mockito学习笔记"></a>Mockito学习笔记</h1><p>项目中，有些函数需要处理某个服务的返回结果，而在对函数单元测试的时候，又不能启动那些服务，这里就可以利用Mockito工具，其中有如下三种注解：</p><pre class="language-none"><code class="language-none">@InjectMocks：创建一个实例，简单的说是这个Mock可以调用真实代码的方法，其余用@Mock（或@Spy）注解创建的mock将被注入到用该实例中。@Mock：对函数的调用均执行mock（即虚假函数），不执行真正部分。@Spy：对函数的调用均执行真正部分。</code></pre><p>Mockito中的Mock和Spy都可用于拦截那些尚未实现或不期望被真实调用的对象和方法，并为其设置自定义行为。二者的区别在于Mock不真实调用，Spy会真实调用。</p><blockquote><p>具体的工作中会遇到的具体案例：<br>问题1：<br>    实例对象的注入对象和注入对象含有相同的属性。举例说明：实例对象ClassA中含有注入对象ClassB、ClassC，实例对象ClassB中也含有ClassC。<br>问题2：<br>    实例对象中含有太多的注入类，并且大部分的代码走真实调用方式，只想要数据库操作的部分代码走Mock调用的方式。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>程序员版《塔木德》</title>
+      <link href="/2021/12/30/cheng-xu-yuan-ban-ta-mu-de/"/>
+      <url>/2021/12/30/cheng-xu-yuan-ban-ta-mu-de/</url>
+      
+        <content type="html"><![CDATA[<h1 id="程序员版《塔木德》"><a href="#程序员版《塔木德》" class="headerlink" title="程序员版《塔木德》"></a>程序员版《塔木德》</h1><p>程序员的重要技能 2021年12月27日</p><ol><li>善于提出问题</li><li>撰写&amp;阅读技术资料</li><li>保持好奇心</li><li>善于分享</li><li>28原则&amp;效率优先</li><li>不要重复造轮子</li><li>读书能力</li><li>沟通&amp;表达能力</li></ol><hr><p>2021年11月26日<br>当你接手或参与一个老系统的维护开发，每天很重要的一项工作就是 <em>读懂原有代码的逻辑</em> ，这样接需求的时候才不会手忙脚乱。<br>中午午休时间不宜大于45分钟，不宜小于30分钟。午休太久白天时间虚度，午休太短下午容易犯困。</p><hr><p>2021年11月23日<br>开发节奏要先紧后松<br>开发时，尽量把工作前置，不要把工作拖到后面，越拖越多，因为问题是不断冒出来的。</p><hr><p>2021年11月18日<br>程序员是一个需要强大自驱力的工作。<br>自驱力主要来源于两方面：一是自身的意志力，二是自己写的代码运行良好获得的满足感。其中第二个来源尤为重要，如果不能在自己写的代码中持续不断地获得满足感，就像摩托车缺少汽油，无法发动起来。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔感想 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔感想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Optional的orElse()与orElseGet()</title>
+      <link href="/2020/12/30/optional-de-orelse-yu-orelseget/"/>
+      <url>/2020/12/30/optional-de-orelse-yu-orelseget/</url>
+      
+        <content type="html"><![CDATA[<p>项目中有这样一段代码：</p><pre class="language-none"><code class="language-none">return Optional.ofNullable(service.A()).orElse(service.B())</code></pre><p>功能显而易见，service.A()如果返回值是null，则返回service.B()，否则直接返回service.A()。<br>实际使用中发现：<br>如果service.A()返回非null,最终结果是service.A(),然而service.B()这个方法也被执行了。这样肯定就不对了,如果service.B()中还有插入数据库或者RPC这种操作，问题就大了。刚开始还以为是什么执行顺序问题，后来在Stack Overflow上看到老外讨论orElse()和orElseGet()的区别，其中一点区别就是：</p><p><strong>orElse(T)无论前面Optional容器是null还是non-null，都会执行orElse里的方法，orElseGet(Supplier)并不会，如果service无异常抛出的情况下，Optional使用orElse或者orElseGet的返回结果都是一样的。</strong></p><p>代码改成如下即可：</p><pre class="language-none"><code class="language-none">return Optional.ofNullable(service.A()).orElseGet(() -&gt; service.B())</code></pre><p>结论：</p><p><strong>若方法不是纯计算型的，使用Optional的orElse(T)；</strong></p><p><strong>若有与数据库交互或者远程调用的，都应该使用orElseGet(Supplier)。</strong></p><p>附stack overflow地址：</p><blockquote><p><a href="https://stackoverflow.com/questions/33170109/difference-between-optional-orelse-and-optional-orelseget#">https://stackoverflow.com/questions/33170109/difference-between-optional-orelse-and-optional-orelseget#</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

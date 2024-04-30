@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>春光的小屋</title>
+  
+  <subtitle>春光的小屋</subtitle>
+  <link href="http://trevzhang.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://trevzhang.github.io/"/>
+  <updated>2024-04-30T14:14:05.841Z</updated>
+  <id>http://trevzhang.github.io/</id>
+  
+  <author>
+    <name>Trevor Zhang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Arthas实用命令</title>
+    <link href="http://trevzhang.github.io/2024/04/30/arthas-shi-yong-ming-ling/"/>
+    <id>http://trevzhang.github.io/2024/04/30/arthas-shi-yong-ming-ling/</id>
+    <published>2024-04-30T14:11:39.000Z</published>
+    <updated>2024-04-30T14:14:05.841Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Arthas命令手册&quot;&gt;&lt;a href=&quot;#Arthas命令手册&quot; class=&quot;headerlink&quot; title=&quot;Arthas命令手册&quot;&gt;&lt;/a&gt;Arthas命令手册&lt;/h1&gt;&lt;h2 id=&quot;JVM（内存）篇&quot;&gt;&lt;a href=&quot;#JVM（内存）篇&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="运维" scheme="http://trevzhang.github.io/categories/%E8%BF%90%E7%BB%B4/"/>
+    
+    
+    <category term="Java" scheme="http://trevzhang.github.io/tags/Java/"/>
+    
+    <category term="Linux" scheme="http://trevzhang.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>绿皮书里Tony写给Dolores的信</title>
+    <link href="http://trevzhang.github.io/2022/08/24/lu-pi-shu-li-tony-xie-gei-dolores-de-xin/"/>
+    <id>http://trevzhang.github.io/2022/08/24/lu-pi-shu-li-tony-xie-gei-dolores-de-xin/</id>
+    <published>2022-08-24T11:34:45.000Z</published>
+    <updated>2024-04-30T14:00:44.780Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;绿皮书里Tony写给Dolores的信&quot;&gt;&lt;a href=&quot;#绿皮书里Tony写给Dolores的信&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="电影" scheme="http://trevzhang.github.io/categories/%E7%94%B5%E5%BD%B1/"/>
+    
+    
+    <category term="电影" scheme="http://trevzhang.github.io/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mockito学习笔记</title>
+    <link href="http://trevzhang.github.io/2022/01/03/mockito-xue-xi-bi-ji/"/>
+    <id>http://trevzhang.github.io/2022/01/03/mockito-xue-xi-bi-ji/</id>
+    <published>2022-01-03T13:45:55.000Z</published>
+    <updated>2024-04-30T14:00:44.780Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Mockito学习笔记&quot;&gt;&lt;a href=&quot;#Mockito学习笔记&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="http://trevzhang.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="http://trevzhang.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序员版《塔木德》</title>
+    <link href="http://trevzhang.github.io/2021/12/30/cheng-xu-yuan-ban-ta-mu-de/"/>
+    <id>http://trevzhang.github.io/2021/12/30/cheng-xu-yuan-ban-ta-mu-de/</id>
+    <published>2021-12-30T11:52:20.000Z</published>
+    <updated>2024-04-30T14:00:44.780Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;程序员版《塔木德》&quot;&gt;&lt;a href=&quot;#程序员版《塔木德》&quot; class=&quot;headerlink&quot; title=&quot;程序员版《塔木德》&quot;&gt;&lt;/a&gt;程序员版《塔木德》&lt;/h1&gt;&lt;p&gt;程序员的重要技能</summary>
+        
+      
+    
+    
+    
+    <category term="随笔感想" scheme="http://trevzhang.github.io/categories/%E9%9A%8F%E7%AC%94%E6%84%9F%E6%83%B3/"/>
+    
+    
+    <category term="随笔感想" scheme="http://trevzhang.github.io/tags/%E9%9A%8F%E7%AC%94%E6%84%9F%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Optional的orElse()与orElseGet()</title>
+    <link href="http://trevzhang.github.io/2020/12/30/optional-de-orelse-yu-orelseget/"/>
+    <id>http://trevzhang.github.io/2020/12/30/optional-de-orelse-yu-orelseget/</id>
+    <published>2020-12-29T18:25:44.000Z</published>
+    <updated>2024-04-30T14:00:44.780Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;项目中有这样一段代码：&lt;/p&gt;
+&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;return</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="http://trevzhang.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="http://trevzhang.github.io/tags/Java/"/>
+    
+  </entry>
+  
+</feed>
