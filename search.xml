@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title>Java排查内存问题常用命令</title>
+      <link href="/2024/05/22/java-pai-cha-nei-cun-wen-ti-chang-yong-ming-ling/"/>
+      <url>/2024/05/22/java-pai-cha-nei-cun-wen-ti-chang-yong-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<p>Java排查内存问题常用命令</p><p>1.查看当前java进程</p><pre class="language-none"><code class="language-none">jps -l</code></pre><p>2.查看指定进程的gc情况</p><pre class="language-none"><code class="language-none"># 查看进程的内存快照jstat -gcutil 15637# 轮询进程的内存快照（interval&#x3D;500ms，times&#x3D;20）jstat -gc 15637 500 20</code></pre><p>3.Dump内存空间，生成hprof文件</p><pre class="language-none"><code class="language-none">jmap -dump:format&#x3D;b,file&#x3D;&#x2F;Users&#x2F;zcg&#x2F;Code&#x2F;Temp&#x2F;dump_15637.hprof 15637</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HyperV功能切换脚本</title>
+      <link href="/2024/05/17/hyperv-gong-neng-qie-huan-jiao-ben/"/>
+      <url>/2024/05/17/hyperv-gong-neng-qie-huan-jiao-ben/</url>
+      
+        <content type="html"><![CDATA[<p>切换windows下的hyper-v功能开关（一些模拟器和WSL不兼容，快速切换）。</p><pre class="language-bat" data-language="bat"><code class="language-bat">@echo offtitle Hyper-V Launch Type Switcher:menuclsecho &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;echo Hyper-V Launch Type Switcherecho &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;for &#x2F;f &quot;tokens&#x3D;2 delims&#x3D;: &quot; %%a in (&#39;bcdedit &#x2F;enum &#x2F;v ^| findstr &#x2F;i &quot;hypervisorlaunchtype&quot;&#39;) do set &quot;currentStatus&#x3D;%%a&quot;set &quot;currentStatus&#x3D;%currentStatus: &#x3D;%&quot;echo Current Status: %currentStatus%echo.echo 1. Enable Hyper-V Launch Typeecho 2. Disable Hyper-V Launch Typeecho 3. Exitecho 4. Restart Systemecho &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;set &#x2F;p choice&#x3D;&quot;Enter your choice (1&#x2F;2&#x2F;3&#x2F;4): &quot;if &quot;%choice%&quot;&#x3D;&#x3D;&quot;1&quot; goto enableif &quot;%choice%&quot;&#x3D;&#x3D;&quot;2&quot; goto disableif &quot;%choice%&quot;&#x3D;&#x3D;&quot;3&quot; goto exitif &quot;%choice%&quot;&#x3D;&#x3D;&quot;4&quot; goto restartecho Invalid choice. Please try again.pausegoto menu:enablebcdedit &#x2F;set hypervisorlaunchtype Autoecho Hyper-V Launch Type has been enabled.pausegoto menu:disablebcdedit &#x2F;set hypervisorlaunchtype Offecho Hyper-V Launch Type has been disabled.pausegoto menu:restartecho Restarting system...shutdown &#x2F;r &#x2F;t 5goto exit:exitecho Exiting...pauseexit</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 脚本 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Arthas实用命令</title>
       <link href="/2024/04/30/arthas-shi-yong-ming-ling/"/>
       <url>/2024/04/30/arthas-shi-yong-ming-ling/</url>

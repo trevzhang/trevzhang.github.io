@@ -6,7 +6,7 @@
   <link href="http://trevzhang.github.io/atom.xml" rel="self"/>
   
   <link href="http://trevzhang.github.io/"/>
-  <updated>2024-04-30T14:29:59.290Z</updated>
+  <updated>2024-05-22T11:26:22.750Z</updated>
   <id>http://trevzhang.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java排查内存问题常用命令</title>
+    <link href="http://trevzhang.github.io/2024/05/22/java-pai-cha-nei-cun-wen-ti-chang-yong-ming-ling/"/>
+    <id>http://trevzhang.github.io/2024/05/22/java-pai-cha-nei-cun-wen-ti-chang-yong-ming-ling/</id>
+    <published>2024-05-22T11:22:58.000Z</published>
+    <updated>2024-05-22T11:26:22.750Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Java排查内存问题常用命令&lt;/p&gt;
+&lt;p&gt;1.查看当前java进程&lt;/p&gt;
+&lt;pre class=&quot;language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;jps</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="http://trevzhang.github.io/tags/Linux/"/>
+    
+    <category term="Java" scheme="http://trevzhang.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HyperV功能切换脚本</title>
+    <link href="http://trevzhang.github.io/2024/05/17/hyperv-gong-neng-qie-huan-jiao-ben/"/>
+    <id>http://trevzhang.github.io/2024/05/17/hyperv-gong-neng-qie-huan-jiao-ben/</id>
+    <published>2024-05-16T19:29:27.000Z</published>
+    <updated>2024-05-20T05:11:51.917Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;切换windows下的hyper-v功能开关（一些模拟器和WSL不兼容，快速切换）。&lt;/p&gt;
+&lt;pre class=&quot;language-bat&quot; data-language=&quot;bat&quot;&gt;&lt;code class=&quot;language-bat&quot;&gt;@echo off
+title</summary>
+        
+      
+    
+    
+    
+    
+    <category term="脚本" scheme="http://trevzhang.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+  </entry>
   
   <entry>
     <title>Arthas实用命令</title>
