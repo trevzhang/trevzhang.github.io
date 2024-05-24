@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://trevzhang.github.io/2024/05/24/kafka-chang-yong-ming-ling/</loc>
+    <lastmod>2024-05-24</lastmod>
+  </url>
+  <url>
     <loc>http://trevzhang.github.io/2024/05/22/java-pai-cha-nei-cun-wen-ti-chang-yong-ming-ling/</loc>
     <lastmod>2024-05-22</lastmod>
   </url>

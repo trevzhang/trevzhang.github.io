@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>kafka常用命令</title>
+      <link href="/2024/05/24/kafka-chang-yong-ming-ling/"/>
+      <url>/2024/05/24/kafka-chang-yong-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<p>– 查看消费者列表–list<br>./kafka-consumer-groups.sh –bootstrap-server localhost:9092 –list</p><p>– 查看指定消费组详情–group<br>./kafka-consumer-groups.sh –bootstrap-server localhost:9092 –describe –group refundGroup</p><p>– 查看kafka所有topic<br>./kafka-topics.sh –list –bootstrap-server localhost:9092</p><p>– 创建Topic<br>./kafka-topics.sh –create –bootstrap-server localhost:9092 –replication-factor 1 –partitions 1 –topic test</p><p>– 查看Topic<br>./kafka-topics.sh –list –zookeeper localhost:2181<br>– 删除Topic<br>./kafka-topics.sh –zookeeper localhost:2181 –delete –topic test</p><p>– 发送和消费数据<br>– 发送数据<br>./kafka-console-producer.sh –broker-list localhost:9092 –topic test<br>//输入内容<br>hi<br>xiaoming</p><p>– 消费数据<br>./kafka-console-consumer.sh –zookeeper localhost:2181 –topic test –from-beginning<br>//内容<br>hi<br>xiaoming</p><p>– 查看kafka版本<br>find ./libs/ -name ‘kafka_*.jar.asc’ |head -n1 | cut -d’/‘ -f3</p><p>– 查看kafka某个topic下partition信息<br>./kafka-topics.sh –zookeeper localhost:2181  –topic topic1111 –describe</p><p>– 修改topic的分区，注意：分区数量只能增加，不能减少<br>./kafka-topics.sh –zookeeper localhost:2181 –alter –topic test –partitions 5</p><p>– kafka启动<br>./kafka-server-start.sh -daemon config/server.properties</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 运维 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java排查内存问题常用命令</title>
       <link href="/2024/05/22/java-pai-cha-nei-cun-wen-ti-chang-yong-ming-ling/"/>
       <url>/2024/05/22/java-pai-cha-nei-cun-wen-ti-chang-yong-ming-ling/</url>
