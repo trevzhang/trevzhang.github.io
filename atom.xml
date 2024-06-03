@@ -28,7 +28,8 @@
       
         
         
-    <summary type="html">&lt;p&gt;– 查看消费者列表–list&lt;br&gt;./kafka-consumer-groups.sh –bootstrap-server localhost:9092 –list&lt;/p&gt;
+    <summary type="html">&lt;p&gt;– 查看消费者列表–list&lt;br&gt;
+./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list&lt;/p&gt;
 &lt;p&gt;–</summary>
         
       
@@ -47,7 +48,7 @@
     <link href="http://trevzhang.github.io/2024/05/22/java-pai-cha-nei-cun-wen-ti-chang-yong-ming-ling/"/>
     <id>http://trevzhang.github.io/2024/05/22/java-pai-cha-nei-cun-wen-ti-chang-yong-ming-ling/</id>
     <published>2024-05-22T11:22:58.000Z</published>
-    <updated>2024-05-22T12:32:21.456Z</updated>
+    <updated>2024-05-30T09:36:45.126Z</updated>
     
     
       
@@ -99,14 +100,17 @@ title</summary>
     <link href="http://trevzhang.github.io/2024/04/30/arthas-shi-yong-ming-ling/"/>
     <id>http://trevzhang.github.io/2024/04/30/arthas-shi-yong-ming-ling/</id>
     <published>2024-04-30T14:11:39.000Z</published>
-    <updated>2024-04-30T14:29:59.290Z</updated>
+    <updated>2024-06-03T07:32:39.270Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Arthas命令手册&quot;&gt;&lt;a href=&quot;#Arthas命令手册&quot; class=&quot;headerlink&quot; title=&quot;Arthas命令手册&quot;&gt;&lt;/a&gt;Arthas命令手册&lt;/h1&gt;&lt;h2 id=&quot;JVM（内存）篇&quot;&gt;&lt;a href=&quot;#JVM（内存）篇&quot;</summary>
+    <summary type="html">&lt;h1&gt;Arthas命令手册&lt;/h1&gt;
+&lt;h2 id=&quot;JVM（内存）篇&quot;&gt;JVM（内存）篇&lt;/h2&gt;
+&lt;h3 id=&quot;1-查看JVM信息&quot;&gt;1.查看JVM信息&lt;/h3&gt;
+&lt;pre class=&quot;language-none&quot;&gt;&lt;code</summary>
         
       
     
@@ -133,7 +137,9 @@ title</summary>
       
         
         
-    <summary type="html">&lt;h1 id=&quot;绿皮书里Tony写给Dolores的信&quot;&gt;&lt;a href=&quot;#绿皮书里Tony写给Dolores的信&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1&gt;绿皮书里Tony写给Dolores的信&lt;/h1&gt;
+&lt;p&gt;Dear Dolores&lt;br&gt;
+When I think of you, I’m reminded of the beautiful plains of Iowa. The distance between us</summary>
         
       
     
@@ -158,7 +164,9 @@ title</summary>
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Mockito学习笔记&quot;&gt;&lt;a href=&quot;#Mockito学习笔记&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1&gt;Mockito学习笔记&lt;/h1&gt;
+&lt;p&gt;项目中，有些函数需要处理某个服务的返回结果，而在对函数单元测试的时候，又不能启动那些服务，这里就可以利用Mockito工具，其中有如下三种注解：&lt;/p&gt;
+&lt;pre class=&quot;language-none&quot;&gt;&lt;code</summary>
         
       
     
@@ -172,18 +180,19 @@ title</summary>
   </entry>
   
   <entry>
-    <title>程序员版《塔木德》</title>
-    <link href="http://trevzhang.github.io/2021/12/30/cheng-xu-yuan-ban-ta-mu-de/"/>
-    <id>http://trevzhang.github.io/2021/12/30/cheng-xu-yuan-ban-ta-mu-de/</id>
+    <title>程序员的自我修养</title>
+    <link href="http://trevzhang.github.io/2021/12/30/cheng-xu-yuan-de-zi-wo-xiu-yang/"/>
+    <id>http://trevzhang.github.io/2021/12/30/cheng-xu-yuan-de-zi-wo-xiu-yang/</id>
     <published>2021-12-30T11:52:20.000Z</published>
-    <updated>2024-04-30T14:30:00.998Z</updated>
+    <updated>2024-06-03T07:32:40.322Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;程序员版《塔木德》&quot;&gt;&lt;a href=&quot;#程序员版《塔木德》&quot; class=&quot;headerlink&quot; title=&quot;程序员版《塔木德》&quot;&gt;&lt;/a&gt;程序员版《塔木德》&lt;/h1&gt;&lt;p&gt;程序员的重要技能</summary>
+    <summary type="html">&lt;h1&gt;程序员的自我修养&lt;/h1&gt;
+&lt;p&gt;程序员的重要技能</summary>
         
       
     

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://trevzhang.github.io/2024/05/24/kafka-chang-yong-ming-ling/</loc>
-    <lastmod>2024-05-24</lastmod>
+    <loc>http://trevzhang.github.io/2021/12/30/cheng-xu-yuan-de-zi-wo-xiu-yang/</loc>
+    <lastmod>2024-06-03</lastmod>
+  </url>
+  <url>
+    <loc>http://trevzhang.github.io/2024/04/30/arthas-shi-yong-ming-ling/</loc>
+    <lastmod>2024-06-03</lastmod>
   </url>
   <url>
     <loc>http://trevzhang.github.io/2024/05/22/java-pai-cha-nei-cun-wen-ti-chang-yong-ming-ling/</loc>
-    <lastmod>2024-05-22</lastmod>
+    <lastmod>2024-05-30</lastmod>
+  </url>
+  <url>
+    <loc>http://trevzhang.github.io/2024/05/24/kafka-chang-yong-ming-ling/</loc>
+    <lastmod>2024-05-24</lastmod>
   </url>
   <url>
     <loc>http://trevzhang.github.io/2024/05/17/hyperv-gong-neng-qie-huan-jiao-ben/</loc>
@@ -21,15 +29,7 @@
     <lastmod>2024-04-30</lastmod>
   </url>
   <url>
-    <loc>http://trevzhang.github.io/2021/12/30/cheng-xu-yuan-ban-ta-mu-de/</loc>
-    <lastmod>2024-04-30</lastmod>
-  </url>
-  <url>
     <loc>http://trevzhang.github.io/2022/08/24/lu-pi-shu-li-tony-xie-gei-dolores-de-xin/</loc>
-    <lastmod>2024-04-30</lastmod>
-  </url>
-  <url>
-    <loc>http://trevzhang.github.io/2024/04/30/arthas-shi-yong-ming-ling/</loc>
     <lastmod>2024-04-30</lastmod>
   </url>
 </urlset> 

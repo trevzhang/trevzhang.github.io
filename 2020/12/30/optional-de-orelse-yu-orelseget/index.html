@@ -412,7 +412,9 @@ return Optional.ofNullable(service.A()).orElse(service.B())
             <div id="articleContent">
                 <p>项目中有这样一段代码：</p>
 <pre class="language-none"><code class="language-none">return Optional.ofNullable(service.A()).orElse(service.B())</code></pre>
-<p>功能显而易见，service.A()如果返回值是null，则返回service.B()，否则直接返回service.A()。<br>实际使用中发现：<br>如果service.A()返回非null,最终结果是service.A(),然而service.B()这个方法也被执行了。这样肯定就不对了,如果service.B()中还有插入数据库或者RPC这种操作，问题就大了。刚开始还以为是什么执行顺序问题，后来在Stack Overflow上看到老外讨论orElse()和orElseGet()的区别，其中一点区别就是：</p>
+<p>功能显而易见，service.A()如果返回值是null，则返回service.B()，否则直接返回service.A()。<br>
+实际使用中发现：<br>
+如果service.A()返回非null,最终结果是service.A(),然而service.B()这个方法也被执行了。这样肯定就不对了,如果service.B()中还有插入数据库或者RPC这种操作，问题就大了。刚开始还以为是什么执行顺序问题，后来在Stack Overflow上看到老外讨论orElse()和orElseGet()的区别，其中一点区别就是：</p>
 <p><strong>orElse(T)无论前面Optional容器是null还是non-null，都会执行orElse里的方法，orElseGet(Supplier)并不会，如果service无异常抛出的情况下，Optional使用orElse或者orElseGet的返回结果都是一样的。</strong></p>
 <p>代码改成如下即可：</p>
 <pre class="language-none"><code class="language-none">return Optional.ofNullable(service.A()).orElseGet(() -&gt; service.B())</code></pre>
@@ -598,13 +600,13 @@ return Optional.ofNullable(service.A()).orElse(service.B())
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/30/cheng-xu-yuan-ban-ta-mu-de/">
+                <a href="/2021/12/30/cheng-xu-yuan-de-zi-wo-xiu-yang/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/trevzhang/trevzhang.github.io/medias/featureimages/22.jpg" class="responsive-img" alt="程序员版《塔木德》">
+                        <img src="https://cdn.jsdelivr.net/gh/trevzhang/trevzhang.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="程序员的自我修养">
                         
-                        <span class="card-title">程序员版《塔木德》</span>
+                        <span class="card-title">程序员的自我修养</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
