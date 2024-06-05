@@ -5,9 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Mockito学习笔记, Java, Rust">
-    <meta name="description" content="Mockito学习笔记
-项目中，有些函数需要处理某个服务的返回结果，而在对函数单元测试的时候，又不能启动那些服务，这里就可以利用Mockito工具，其中有如下三种注解：
-@InjectMocks：创建一个实例，简单的说是这个Mock可以调用">
+    <meta name="description" content="Mockito学习笔记项目中，有些函数需要处理某个服务的返回结果，而在对函数单元测试的时候，又不能启动那些服务，这里就可以利用Mockito工具，其中有如下三种注解：
+@InjectMocks：创建一个实例，简单的说是这个Mock可以调用真">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -410,8 +409,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1>Mockito学习笔记</h1>
-<p>项目中，有些函数需要处理某个服务的返回结果，而在对函数单元测试的时候，又不能启动那些服务，这里就可以利用Mockito工具，其中有如下三种注解：</p>
+                <h1 id="Mockito学习笔记"><a href="#Mockito学习笔记" class="headerlink" title="Mockito学习笔记"></a>Mockito学习笔记</h1><p>项目中，有些函数需要处理某个服务的返回结果，而在对函数单元测试的时候，又不能启动那些服务，这里就可以利用Mockito工具，其中有如下三种注解：</p>
 <pre class="language-none"><code class="language-none">@InjectMocks：创建一个实例，简单的说是这个Mock可以调用真实代码的方法，其余用@Mock（或@Spy）注解创建的mock将被注入到用该实例中。
 
 @Mock：对函数的调用均执行mock（即虚假函数），不执行真正部分。
@@ -419,11 +417,7 @@
 @Spy：对函数的调用均执行真正部分。</code></pre>
 <p>Mockito中的Mock和Spy都可用于拦截那些尚未实现或不期望被真实调用的对象和方法，并为其设置自定义行为。二者的区别在于Mock不真实调用，Spy会真实调用。</p>
 <blockquote>
-<p>具体的工作中会遇到的具体案例：<br>
-问题1：<br>
-实例对象的注入对象和注入对象含有相同的属性。举例说明：实例对象ClassA中含有注入对象ClassB、ClassC，实例对象ClassB中也含有ClassC。<br>
-问题2：<br>
-实例对象中含有太多的注入类，并且大部分的代码走真实调用方式，只想要数据库操作的部分代码走Mock调用的方式。</p>
+<p>具体的工作中会遇到的具体案例：<br>问题1：<br>    实例对象的注入对象和注入对象含有相同的属性。举例说明：实例对象ClassA中含有注入对象ClassB、ClassC，实例对象ClassB中也含有ClassC。<br>问题2：<br>    实例对象中含有太多的注入类，并且大部分的代码走真实调用方式，只想要数据库操作的部分代码走Mock调用的方式。</p>
 </blockquote>
 
                 

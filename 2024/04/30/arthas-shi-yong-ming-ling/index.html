@@ -5,16 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Arthas实用命令, Java, Rust">
-    <meta name="description" content="Arthas命令手册
-JVM（内存）篇
-1.查看JVM信息
-jvm
-2.内存火焰图
-线程篇
-1.CPU使用率前5的线程
-thread -i 3000 -n 5 | plaintext
-2.阻塞（等待获取锁）的线程
-thread -b | p">
+    <meta name="description" content="Arthas命令手册JVM（内存）篇1.查看JVM信息jvm
+2.内存火焰图线程篇1.CPU使用率前5的线程thread -i 3000 -n 5 | plaintext
+2.阻塞（等待获取锁）的线程thread -b | plaintex">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -421,23 +414,12 @@ thread -b | p">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1>Arthas命令手册</h1>
-<h2 id="JVM（内存）篇">JVM（内存）篇</h2>
-<h3 id="1-查看JVM信息">1.查看JVM信息</h3>
-<pre class="language-none"><code class="language-none">jvm</code></pre>
-<h3 id="2-内存火焰图">2.内存火焰图</h3>
-<h2 id="线程篇">线程篇</h2>
-<h3 id="1-CPU使用率前5的线程">1.CPU使用率前5的线程</h3>
-<pre class="language-none"><code class="language-none">thread -i 3000 -n 5 | plaintext</code></pre>
-<h3 id="2-阻塞（等待获取锁）的线程">2.阻塞（等待获取锁）的线程</h3>
-<pre class="language-none"><code class="language-none">thread -b | plaintext</code></pre>
-<h3 id="3-所有处于BLOCKED状态的线程">3.所有处于<code>BLOCKED</code>状态的线程</h3>
-<pre class="language-none"><code class="language-none">thread --state BLOCKED | plaintext</code></pre>
-<h2 id="CPU篇">CPU篇</h2>
-<h3 id="1-arthas-jprofiler分析-采集的cpu-jfr火焰图">1.arthas+jprofiler分析 采集的cpu jfr火焰图</h3>
-<pre class="language-none"><code class="language-none">profiler start --event cpu --interval 10000000 --format jfr --duration 180</code></pre>
-<h2 id="Watch篇">Watch篇</h2>
-<p>设置json格式输出参数</p>
+                <h1 id="Arthas命令手册"><a href="#Arthas命令手册" class="headerlink" title="Arthas命令手册"></a>Arthas命令手册</h1><h2 id="JVM（内存）篇"><a href="#JVM（内存）篇" class="headerlink" title="JVM（内存）篇"></a>JVM（内存）篇</h2><h3 id="1-查看JVM信息"><a href="#1-查看JVM信息" class="headerlink" title="1.查看JVM信息"></a>1.查看JVM信息</h3><pre class="language-none"><code class="language-none">jvm</code></pre>
+<h3 id="2-内存火焰图"><a href="#2-内存火焰图" class="headerlink" title="2.内存火焰图"></a>2.内存火焰图</h3><h2 id="线程篇"><a href="#线程篇" class="headerlink" title="线程篇"></a>线程篇</h2><h3 id="1-CPU使用率前5的线程"><a href="#1-CPU使用率前5的线程" class="headerlink" title="1.CPU使用率前5的线程"></a>1.CPU使用率前5的线程</h3><pre class="language-none"><code class="language-none">thread -i 3000 -n 5 | plaintext</code></pre>
+<h3 id="2-阻塞（等待获取锁）的线程"><a href="#2-阻塞（等待获取锁）的线程" class="headerlink" title="2.阻塞（等待获取锁）的线程"></a>2.阻塞（等待获取锁）的线程</h3><pre class="language-none"><code class="language-none">thread -b | plaintext</code></pre>
+<h3 id="3-所有处于BLOCKED状态的线程"><a href="#3-所有处于BLOCKED状态的线程" class="headerlink" title="3.所有处于BLOCKED状态的线程"></a>3.所有处于<code>BLOCKED</code>状态的线程</h3><pre class="language-none"><code class="language-none">thread --state BLOCKED | plaintext</code></pre>
+<h2 id="CPU篇"><a href="#CPU篇" class="headerlink" title="CPU篇"></a>CPU篇</h2><h3 id="1-arthas-jprofiler分析-采集的cpu-jfr火焰图"><a href="#1-arthas-jprofiler分析-采集的cpu-jfr火焰图" class="headerlink" title="1.arthas+jprofiler分析 采集的cpu jfr火焰图"></a>1.arthas+jprofiler分析 采集的cpu jfr火焰图</h3><pre class="language-none"><code class="language-none">profiler start --event cpu --interval 10000000 --format jfr --duration 180</code></pre>
+<h2 id="Watch篇"><a href="#Watch篇" class="headerlink" title="Watch篇"></a>Watch篇</h2><p>设置json格式输出参数</p>
 <pre class="language-shell" data-language="shell"><code class="language-shell">options json-format true</code></pre>
 <p>条件过滤表达式</p>
 <pre class="language-shell" data-language="shell"><code class="language-shell">watch [class].[method] &quot;&#123;params,returnObj,throwExp&#125;&quot; &quot;params[0].equals(&#39;123&#39;)&quot; -n 5  -x 3</code></pre>
